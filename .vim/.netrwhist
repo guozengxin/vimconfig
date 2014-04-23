@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/search/guozengxin/dir_test/git/blogs/_includes/JB/comments-providers'
+let g:netrw_dirhist_2='/search/guozengxin/dir_test/git/blogs/assets/img'
+let g:netrw_dirhist_3='/search/guozengxin/dir_test/git/blogs/assets/images'
+let g:netrw_dirhist_4='/search/guozengxin/dir_test/git/blogs/_includes/analytics-providers'
+let g:netrw_dirhist_5='/search/guozengxin/dir_test/git/blogs/_includes/asides'
+let g:netrw_dirhist_6='/search/guozengxin/dir_test/git/blogs/_includes/comments-providers'
