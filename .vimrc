@@ -132,7 +132,7 @@ set autoindent
 " 开户新行的采用自动缩进 
 set si
 " 大于的一行的文本会换行显示
-set nowrap
+set wrap
 
 
 """"""""""""""""""""""""""""""
@@ -288,7 +288,7 @@ endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 
 
-""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""
 " => JavaScript section
 """""""""""""""""""""""""""""""
 au FileType javascript setl fen
@@ -299,6 +299,12 @@ au FileType javascript imap <c-a> alert();<esc>hi
 
 au FileType javascript inoremap <buffer> $r return 
 au FileType javascript inoremap <buffer> $f //--- PH ----------------------------------------------<esc>FP2xi
+
+
+"""""""""""""""""""""""""""""""
+" => Html section
+"""""""""""""""""""""""""""""""
+au FileType html setlocal expandtab smarttab shiftwidth=2 softtabstop=2
 
 
 """"""""""""""""""""""""""""""
