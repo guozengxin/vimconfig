@@ -256,6 +256,21 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 
 """"""""""""""""""""""""""""""
+" => css 部分
+""""""""""""""""""""""""""""""
+autocmd BufNewFile,BufRead *.less set filetype=less
+autocmd FileType css,less,scss setlocal expandtab smarttab shiftwidth=2 softtabstop=2
+
+
+""""""""""""""""""""""""""""""
+" => json 部分
+""""""""""""""""""""""""""""""
+autocmd BufNewFile,BufRead *.json set filetype=json
+autocmd FileType json setlocal expandtab smarttab shiftwidth=2 softtabstop=2
+
+
+
+""""""""""""""""""""""""""""""
 " => Python部分
 """"""""""""""""""""""""""""""
 " 使flake8插件
@@ -302,9 +317,16 @@ au FileType javascript inoremap <buffer> $f //--- PH ---------------------------
 
 
 """""""""""""""""""""""""""""""
-" => Html section
+" => Html部分
 """""""""""""""""""""""""""""""
+au BufNewFile,BufRead *.htm,*.html set filetype=html
 au FileType html setlocal expandtab smarttab shiftwidth=2 softtabstop=2
+
+
+"""""""""""""""""""""""""""""""
+" => xml部分
+"""""""""""""""""""""""""""""""
+au FileType xml setlocal expandtab smarttab shiftwidth=2 softtabstop=2
 
 
 """"""""""""""""""""""""""""""
