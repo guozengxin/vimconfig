@@ -259,6 +259,7 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 " => css ²¿·Ö
 """"""""""""""""""""""""""""""
 autocmd BufNewFile,BufRead *.less set filetype=less
+autocmd BufNewFile,BufRead *.scss set filetype=scss
 autocmd FileType css,less,scss setlocal expandtab smarttab shiftwidth=2 softtabstop=2
 
 
