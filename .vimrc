@@ -96,7 +96,7 @@ set encoding=utf-8
 " 终端显示编码
 set termencoding=gb18030
 " 设置可识别的文件编码
-set fileencodings=gb18030,utf-8,cp936,ucs-bom,big5,euc-jp,euc-kr,latin1
+set fileencodings=utf-8,gb18030,cp936,ucs-bom,big5,euc-jp,euc-kr,latin1
 try
     lang en_US
 catch
@@ -307,6 +307,7 @@ autocmd BufWrite *.py :call DeleteTrailingWS()
 """""""""""""""""""""""""""""""
 " => JavaScript section
 """""""""""""""""""""""""""""""
+au BufNewFile,BufRead *.js set filetype=javascript
 au FileType javascript setl fen
 au FileType javascript setl nocindent
 
@@ -315,6 +316,7 @@ au FileType javascript imap <c-a> alert();<esc>hi
 
 au FileType javascript inoremap <buffer> $r return 
 au FileType javascript inoremap <buffer> $f //--- PH ----------------------------------------------<esc>FP2xi
+au FileType python setlocal expandtab smarttab shiftwidth=4 softtabstop=4
 
 
 """""""""""""""""""""""""""""""
@@ -346,7 +348,8 @@ set grepprg=/bin/grep\ -nH
 """"""""""""""""""""""""""""""
 " => 自定义输入快捷键
 """"""""""""""""""""""""""""""
-map <leader>cl i\\color{}{}<esc>2hi
+" map <leader>cl i\\color{}{}<esc>2hi
+map <leader>il i\\(\\)<esc>2hi
 
 
 set tags=tags;../tags;../../tags;../../../tags;../../../../tags;
